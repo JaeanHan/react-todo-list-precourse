@@ -1,6 +1,7 @@
 import { memo, useRef, useState } from "react";
 import styles from "../../styles/todos/TodoItem.module.css";
 import { useTypingEffect } from "../../hooks/useTypingEffect.js";
+import dragImg from "/drag-handle.svg"
 
 const switchToInput = (setIsEditing, isDone) => {
     if (isDone) {
@@ -82,7 +83,7 @@ function DragButton() {
     return (
         <img
             className={styles.todoItem__VC__drag}
-            src="/public/drag-handle-svgrepo-com.svg"
+            src={dragImg}
             alt="drag and drop to rearrange"
             draggable={false}
         />

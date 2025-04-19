@@ -32,7 +32,7 @@ const cacheTodo = (todos) => {
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-const readCache = () => JSON.parse(localStorage.getItem("todos"));
+const readCache = () => JSON.parse(localStorage.getItem("todos")) ?? [];
 
 const cacheOnInit = () => {
     const cached = readCache();

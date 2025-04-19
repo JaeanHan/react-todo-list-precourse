@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://jaeanhan.github.io/react-todo-list",
+  "homepage": "https://jaeanhan.github.io/react-todo-list-precourse",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
